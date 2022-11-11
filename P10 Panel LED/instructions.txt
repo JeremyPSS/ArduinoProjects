@@ -1,0 +1,6 @@
+please unzip the libraries file and you get a libraries folder just copy and paste in your Arduino libraries folder.
+C:\Users\ABHAY\Documents\Arduino
+
+
+thanks
+youtube.com/techab
