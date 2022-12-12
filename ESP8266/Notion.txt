@@ -1,0 +1,22 @@
+- Notes
+    
+    OJO EL ARDUINO TRABAJA DESDE 6.5 HASTA 7 VOLTIOS ( POR LO QUE NO HAYY Q USAR PILA DE 9 VOLTIOS)
+    
+    - current
+        - La intensidad **máxima**
+         que puede entregar **Arduino**
+         a los actuadores que queramos controlar (servos, motores, relés,...) es de 1A, aunque una exposición prolongada a esta **corriente**
+         puede estropear la placa. Lo recomendable son 800 mA.
+        - Thanks for the video.
+        Small improvement.
+        To avoid parasitic noise at the start I add a sequence "0, 6, 14, 22, 30, 38, 46, 54, 60, 68, 74, 82, 90, 98, 106, 114, 122," at the start of "const unsigned char sample0 [] PROGMEM".
+        As a precaution, perhaps it is better to attack the transistor with a 150 Ohms connected to the base.
+        - speaker > 8ohm 3w 5v 625 mA
+        - sensor 5v Working current: 15mA
+        - servo motor 3.3v 500 mAh
+        - s9014 c331 transistor
+        - Arduino Due and Vin, 3.3V and 5V power inputsThe maximum total current you can draw when the device is powered via external power supply is **1A for the Arduino Uno**
+    - call librery
+        1. Cuando ponemos el nombre de la librería entre **“”** se buscarán los ficheros de dicha librería en el mismo directorio/carpeta donde tenemos el código del programa. Si guardas el proyecto en la carpeta *Escritorio/miPrograma*, se buscará en esa misma carpeta los archivos de la librería que deberían estar junto con tu proyecto *miPrograma.ino*.
+        2. Cuando se añaden las librerías entre **<>**, se buscan los ficheros en la carpeta del sistema reservada con tal propósito donde están guardadas las librerías que vienen por defecto con Arduino.
+    - transistor
